@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":" node ./Program1_2/app.js",
+    "pro3":" node ./Program3/app.js",
+    "pro4":" node ./Program4/Zip.js",
+    "pro5":" node ./Program5/Unzip.js",
+    "pro6":" node ./Program6/Uinlink.js",
+    "pro7":" node ./Program7/app.js"
   },
   "author": "",
   "license": "ISC",
