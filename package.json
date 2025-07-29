@@ -9,7 +9,10 @@
     "pro4":" node ./Program4/Zip.js",
     "pro5":" node ./Program5/Unzip.js",
     "pro6":" node ./Program6/Uinlink.js",
-    "pro7":" node ./Program7/app.js"
+    "pro7":" node ./Program7/app.js",
+    "pro9":" node ./Program9/app.js",
+    "pro10":" node ./Program10/app.js",
+    "pro11":" node ./Program11/app.js"
   },
   "author": "",
   "license": "ISC",
