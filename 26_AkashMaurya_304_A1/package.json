@@ -1,0 +1,25 @@
+{
+  "name": "assighment-nodjs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": " node ./Program1_2/app.js",
+    "pro3": " node ./Program3/app.js",
+    "pro4": " node ./Program4/Zip.js",
+    "pro5": " node ./Program5/Unzip.js",
+    "pro6": " node ./Program6/Uinlink.js",
+    "pro7": " node ./Program7/app.js",
+    "pro9": " node ./Program9/app.js",
+    "pro10": " node ./Program10/app.js",
+    "pro11": " node ./Program11/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "��#\u0000 \u0000O\u0000W\u0000S\u0000D\u0000_\u0000A\u0000s\u0000s\u0000i\u0000g\u0000n\u0000m\u0000e\u0000n\u0000t\u0000\r\u0000 \u0000",
+  "dependencies": {
+    "chatbot": "^1.2.3",
+    "express": "^5.1.0",
+    "path": "^0.12.7"
+  }
+}
