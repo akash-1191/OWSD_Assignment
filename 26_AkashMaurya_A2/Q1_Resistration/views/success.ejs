@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Registration Successful</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+  <div class="max-w-3xl mx-auto bg-white p-8 rounded shadow">
+    <h2 class="text-2xl font-bold mb-4 text-center">Registration Successful!</h2>
+
+    <table class="table-auto w-full border-collapse border border-gray-300">
+      <tbody>
+        <tr class="border border-gray-300">
+          <td class="border border-gray-300 p-2 font-semibold">Username</td>
+          <td class="border border-gray-300 p-2"><%= user.username %></td>
+        </tr>
+        <tr class="border border-gray-300">
+          <td class="border border-gray-300 p-2 font-semibold">Email</td>
+          <td class="border border-gray-300 p-2"><%= user.email %></td>
+        </tr>
+        <tr class="border border-gray-300">
+          <td class="border border-gray-300 p-2 font-semibold">Gender</td>
+          <td class="border border-gray-300 p-2"><%= user.gender %></td>
+        </tr>
+        <tr class="border border-gray-300">
+          <td class="border border-gray-300 p-2 font-semibold">Hobbies</td>
+          <td class="border border-gray-300 p-2"><%= user.hobbies.join(", ") || "None" %></td>
+        </tr>
+        <tr class="border border-gray-300">
+          <td class="border border-gray-300 p-2 font-semibold">Profile Picture</td>
+          <td class="border border-gray-300 p-2">
+            <% if (user.profilePic) { %>
+              <img src="/uploads/<%= user.profilePic %>" alt="Profile Pic" class="w-24 h-24 object-cover rounded" />
+            <% } else { %>
+              No Profile Picture Uploaded
+            <% } %>
+          </td>
+        </tr>
+        <tr class="border border-gray-300">
+          <td class="border border-gray-300 p-2 font-semibold">Other Pictures</td>
+          <td class="border border-gray-300 p-2 space-x-4">
+            <% if (user.otherPics.length > 0) { %>
+              <% user.otherPics.forEach(pic => { %>
+                <img src="/uploads/<%= pic %>" alt="Other Pic" class="w-20 h-20 object-cover inline-block rounded" />
+              <% }) %>
+            <% } else { %>
+              No Other Pictures Uploaded
+            <% } %>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="mt-6 text-center">
+      <a href="/" class="text-blue-600 hover:underline">Register Another User</a>
+    </div>
+  </div>
+</body>
+</html>
